@@ -26,6 +26,8 @@ void save_file_ssd(SSD* ssd); // Move all pages to file
 
 void write_ssd(SSD* ssd, u8* key, u8* value); // Write data to hashmap
 
+u8* read_ssd(SSD* ssd, u8* key);
+
 void remove_ssd(SSD* ssd, u8* key); // Remove data from hashmap
 
 #endif

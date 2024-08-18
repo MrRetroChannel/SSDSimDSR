@@ -15,7 +15,7 @@ HASH_MAP_BUILD_DIR=$(BUILD_DIR)/$(HASH_MAP_DIR)
 SSD_SIM_INCLUDE=$(call INCLUDE,$(SSD_SIM_DIR))
 SSD_SIM_SRC=$(call SRC, $(SSD_SIM_DIR))
 
-all:
+all: hash_map_lib
 	$(CC) $(SSD_SIM_SRC) -I$(SSD_SIM_DIR)/include -I$(HASH_MAP_DIR)/include -I. -o ssdsim $(BUILD_DIR)/$(HASH_MAP_DIR)/hash_map.a
  
 $(BUILD_DIR):
